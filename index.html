@@ -118,7 +118,7 @@ h1 .w>span{display:inline-block;transform:translateY(108%);animation:rise 1s cub
 /* orbit graphic */
 .visual{position:relative}
 .visual{padding:30px 0 150px}
-.orbit{position:relative;aspect-ratio:1;width:min(76%,400px);margin:150px 0 0}
+.orbit{position:relative;aspect-ratio:1;width:min(70%,380px);margin:30px 0 0}
 .orbit .ring{position:absolute;inset:0;margin:auto;border-radius:50%;border:1px dashed var(--line2)}
 .orbit .r1{width:46%;height:46%;border-style:solid;border-color:color-mix(in srgb,var(--rose) 30%,transparent)}
 .orbit .r2{width:72%;height:72%;animation:spin 40s linear infinite}
@@ -136,7 +136,7 @@ h1 .w>span{display:inline-block;transform:translateY(108%);animation:rise 1s cub
 @keyframes cpos{from{transform:translate(-50%,-50%) rotate(0)}to{transform:translate(-50%,-50%) rotate(360deg)}}
 .chip.p2{top:50%;left:100%}.chip.p3{top:100%;left:50%}.chip.p4{top:50%;left:0}
 .chip.d1{top:14.6%;left:85.4%}.chip.d3{top:85.4%;left:14.6%}
-.code{position:absolute;right:0;top:0;width:54%;background:var(--card);border:1px solid var(--line2);border-radius:16px;box-shadow:var(--shadow);font:400 12.5px/1.95 var(--mono);overflow:hidden;animation:bob 7s ease-in-out infinite;z-index:2}
+.code{position:absolute;right:-48px;top:40px;width:272px;background:var(--card);border:1px solid var(--line2);border-radius:16px;box-shadow:var(--shadow);font:400 12px/1.95 var(--mono);overflow:hidden;animation:bob 7s ease-in-out infinite;z-index:2}
 .code .bar{display:flex;align-items:center;gap:6px;padding:10px 13px;border-bottom:1px solid var(--line);font:500 11px var(--mono);color:var(--dim)}
 .code .bar i{width:9px;height:9px;border-radius:50%}
 .code .bar span{margin-left:8px}
@@ -450,6 +450,8 @@ footer a{text-decoration:none}footer a:hover{color:var(--rose)}
 .js .rv.in{opacity:1;transform:none;filter:none}
 
 /* =================== RESPONSIVE =================== */
+@media (min-width:1081px) and (max-width:1260px){.code{right:-14px;width:250px;font-size:11px}}
+@media (min-width:1081px) and (max-width:1180px){.code{right:-12px;width:246px;font-size:10.8px}.orbit{width:62%}}
 @media (max-width:1080px){
   .nav .links{display:none;position:absolute;top:calc(100% + 10px);left:0;right:0;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:10px;box-shadow:var(--shadow)}
   .nav .links.open{display:flex}
